@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title >Club Atlético Boca Juniors</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</head>
+<header class="header">Club Atlético Boca Juniors</header>
+<body class="bg-primary">
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="icon">&#9776;</label>
+  <label for="menu-toggle" class="close-icon">&#10006;</label>
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="noticias.html">Noticias</a></li>
+      <li><a href="equipo.html">Equipo</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+<h1 class="text-warning">Club Atlético Boca Juniors - Contactanos
+    ¿Querés más información?</h1>
+    <h2 class="text-warning">Escuchamos sus preguntas, comentarios y sugerencias. Seleccione el área que quisiera contactar.</h2>
+
+<form  action="/enviar.php" method="post" >
+    <label class="text-warning"  for="Nombre y Apellido" >Nombre y Apellido*:</label>
+    <input type="Nombre y Apellido" id="Nombre y Apellido"  name="Nombre y Apellido" required placeholder="Completar"><br><br>
+
+    <label class="text-warning" for="Telefono">Telefono*:</label>
+    <input type="telefono" id="telefono" name="telefono" required placeholder="Completar"><br><br>
+
+    <label class="text-warning" for="Mail">Mail*:</label>
+    <input type="Mail" id="Mail" name="Mail" required placeholder="Completar"><br><br>
+
+    <label class="text-warning"  for="mensaje"> Mensaje*:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="8" required placeholder="Escribe tu mensaje..."></textarea><br>
+<p>Campos obligatorios*</p>
+    <input class="text-warning" type="submit" value="enviar">
+
+
+
+
